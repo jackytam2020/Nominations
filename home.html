@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <title> First level </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/Cat.css">
+    <link rel="stylesheet" type="text/css" href="./styles/transition.css">
+    <link rel="stylesheet" href="./styles/results.css">
+    <link rel="stylesheet" href="./styles/selection.css">
+</head>
+<body>
+    
+<!-- FIRST PAGE  -->    
+
+        <div id="container">
+                <div id="homeTitle"><span>Years</span></div>
+                
+                <div id="top" onclick="Selected()">
+                    <div id="topBox">
+                    <span>2010 - 2013</span>    
+                    </div>
+                
+                </div>    
+
+                <div id="bottom" onclick="botSelected()">
+                    <div id="bottomBox">
+                    <span>2014 - 2018</span>    
+                    </div>
+                </div>
+                
+                
+                <div id="navbar">
+                    <div id="Home"></div>
+                    <div id="Categories" onclick="backtoCat()"></div>
+                    <div id="Results" onclick="backtoSelection()"></div>
+                </div> 
+            
+        </div>
+
+<!-- SECOND PAGE  -->  
+        <div id="Catcontainer" >
+                <div id="CatTitle"><span>Award Categories</span></div>
+
+                <div id="gridContainer" >     
+                    <div id="grid">
+                        <div id="cat1" onclick="resultsPageActor()"><span>Best Actors in Lead Roles</span></div>
+                        <div id="cat2" onclick="resultsPageActress()"><span>Best Actresses in Lead Roles</span></div>
+                        <div id="cat3" onclick="resultsPageDirector()"><span>Best Directors</span></div>
+                        <div id="cat4" onclick="resultsPagePicture()"><span>Best Picture</span></div>
+                    </div>
+                </div>
+                
+        </div> 
+
+        
+<!-- THIRD PAGE  --> 
+        <div id="resultsContainer">
+                <div id="resultsTitle"><span >Search Results</span></div>
+                
+                <div id="pContainer">
+                    
+                </div>
+    
+        </div>
+
+<!-- Fourth Page -->
+
+        <div id="selectionContainer">
+                <div id="posterContainer">
+                    <div id="poster"></div>
+                </div>
+                
+                <div id="descContainer">
+                        <p id="title3"></p>
+                        <p id="year"></p>
+                        <p id="genre"></p>
+                </div>
+
+                <div id="galleryContainer">
+                        <div id="gallery">
+                            <div id="scene1"></div>
+                            <div id="scene2"></div>
+                            <div id="scene3"></div>
+                            <div id="scene4"></div>
+                        </div>
+                </div>
+
+                <div id="secondPosterContainer">
+                        <div id="secondPoster"></div>
+                </div>
+
+                <div id="synopsisBox">
+                    <div id="synopsisContainer">
+                        <hr id="firstline">
+                        <p id="synopsis"></p>
+                        <p id="synopsisText"></p>
+                        <hr id="secondline">
+                    </div>
+                </div>
+
+                <div id="directorContainer">
+                    <div id="directorBox">
+                        <div id="director"> Director</div>
+                    </div>
+                    <div id="directorLine">
+                        <div id="portrait"></div>
+                        <div class="name" id="directorname">Director</div>
+                    </div>   
+                </div>
+                <hr id="thirdline">
+
+                <div id="castBox">
+                    <div id="castContainer">
+                        <div id="castTitleBox">
+                            <div id="cast"> Cast</div>
+                        </div>
+                        <div id="castLine1">
+                            <div id="portrait1"></div>
+                            <div class="name"> <span id="firstcast"></span> <br><span class="role" id="firstrole"> as Eliza Esposito </span></div>
+                        </div>
+                        <div id="castLine2">
+                            <div id="portrait2"></div>
+                            <div class="name"> <span id="secondcast"> </span> <br><span class="role" id="secondrole"> as Strickland </span></div>
+                        </div>
+                        <div id="castLine3">
+                            <div id="portrait3"></div>
+                            <div class="name"> <span id="thirdcast"></span><br><span class="role" id="thirdrole"></span></div>
+                        </div>
+                    </div>
+                    <hr id="fourthline">
+                </div>
+
+                <div id="awardBox">
+                        <div id="awardTitleBox">
+                            <div id="awardWins"> Award Wins</div>
+                        </div> 
+                </div>
+        </div>
+        
+        <div id="navbar">
+                <div id="Home" onclick="backtoFirst()"></div>
+                <div id="Categories" onclick="backtoCat()"></div>
+                <div id="Results" onclick="backtoSelection()"></div>
+            </div>    
+    <script src="app.js"></script>
+</body>
+ 
+   
+</html>
